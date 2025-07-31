@@ -1,0 +1,27 @@
+[project]
+name = "stable-diffusion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lightning==2.0.9",
+    "markupsafe==2.1.3",
+    "numpy==2.1.2",
+    "onnx>=1.18.0",
+    "pillow==9.5.0",
+    "pycuda>=2025.1.1",
+    "tensorrt",
+    "torch==2.6.0",
+    "tqdm==4.65.1",
+    "transformers==4.33.3",
+    "ultralytics>=8.3.156",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.uv.sources]
+tensorrt = { path = "../../../../workspace/python/tensorrt-10.11.0.33-cp311-none-linux_x86_64.whl" }

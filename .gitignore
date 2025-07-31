@@ -1,0 +1,15 @@
+data
+
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.ipynb_checkpoints
+uv.lock
+
+._*
+sd/onnx/diffusion.onnx
+sd/utils/convert_safetensors_to_ckpt_auto.py
+sd/utils/convert_safetensors_to_ckpt.py
+sd/utils/inspect_ckpt_keys.py
+sd/yolov8x-seg.pt
